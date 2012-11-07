@@ -14,7 +14,7 @@ class Mosh < Formula
   end
 
   def install
-    system "./gen-git-build.sh"
+    system "sh ./gen-git-build.sh"
     system "./configure", "--disable-dependency-tracking",
                           "--prefix=#{prefix}"
     system "make"
