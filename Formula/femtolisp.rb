@@ -8,7 +8,7 @@ class Flisp < Formula
 
   def install
     bin.mkpath
-    system "make", "release", "CC=clang"
+    system "make", "-f", "Makefile.macosx", "release", "CC=clang"
     bin.install "flisp"
   end
 end
