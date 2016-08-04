@@ -7,6 +7,7 @@ class Flisp < Formula
   head "https://github.com/JeffBezanson/femtolisp.git"
 
   def install
+    bin.mkpath
     system "make", "-f", "Makefile.macosx"
     bin.install "flisp"
   end
