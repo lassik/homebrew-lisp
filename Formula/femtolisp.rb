@@ -10,5 +10,6 @@ class Flisp < Formula
     bin.mkpath
     system "make", "-f", "Makefile.macosx", "release", "CC=clang"
     bin.install "flisp"
+    bin.install "flisp.boot"
   end
 end
