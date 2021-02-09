@@ -1,6 +1,9 @@
 require "formula"
 
-class Mosh < Formula
+# homebrew/core has a mosh formula for a remote terminal application.
+# Call this mosh-scheme to avoid a name clash.
+
+class MoshScheme < Formula
   homepage "http://mosh.monaos.org"
   head "https://github.com/okuoku/mosh.git"  # higepon/mosh
   url "https://files.scheme.org/mosh-0.2.7.tar.gz"
@@ -15,10 +18,12 @@ class Mosh < Formula
 
   def install
     system "sh ./gen-git-build.sh"
-    system "./configure", "--disable-dependency-tracking",
-           "--prefix=#{prefix}"
+    system "./configure",
+           "--disable-dependency-tracking",
+           "--prefix=#{prefix}",
+           "--program-transform-name=s@mosh@mosh-scheme@; s@_@-@"
     system "make"
-    system "make check"
+    #system "make check"
     system "make install"
   end
 end
