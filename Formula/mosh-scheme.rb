@@ -2,8 +2,8 @@
 # Call this mosh-scheme to avoid a name clash.
 
 class MoshScheme < Formula
-  homepage "http://mosh.monaos.org"
   desc "Fast Scheme interpreter [R6RS]"
+  homepage "http://mosh.monaos.org/"
   url "https://files.scheme.org/mosh-0.2.7.tar.gz"
   head "https://github.com/okuoku/mosh.git" # higepon/mosh
   sha256 "3bafe0e3412d78041433540b59a84523f5c36c5d6c7f94a661e43d74ae7ca74e"
