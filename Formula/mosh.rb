@@ -2,9 +2,9 @@ require "formula"
 
 class Mosh < Formula
   homepage "http://mosh.monaos.org"
-  url "http://mosh-scheme.googlecode.com/files/mosh-0.2.7.tar.gz"
-  sha1 "866c08ac12e14733ce27756001a27257624d01ad"
-  head "https://github.com/okuoku/mosh.git"
+  head "https://github.com/okuoku/mosh.git"  # higepon/mosh
+  url "https://files.scheme.org/mosh-0.2.7.tar.gz"
+  sha256 "3bafe0e3412d78041433540b59a84523f5c36c5d6c7f94a661e43d74ae7ca74e"
 
   depends_on "gmp"
   depends_on "oniguruma"
