@@ -1,6 +1,6 @@
 class Tinyscheme < Formula
   desc "Scheme interpreter in one file of C"
-  homepage "http://tinyscheme.sourceforge.net/"
+  homepage "https://tinyscheme.sourceforge.io/"
   url "https://files.scheme.org/tinyscheme-1.42.tar.gz"
   sha256 "17b0b1bffd22f3d49d5833e22a120b339039d2cfda0b46d6fc51dd2f01b407ad"
   license "BSD-4-Clause"
