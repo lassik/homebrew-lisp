@@ -8,7 +8,7 @@ class Femtolisp < Formula
   license "BSD-3-Clause"
 
   patch do
-    url "https://raw.githubusercontent.com/lassik/homebrew-scheme/master/patches/femtolisp-macos.patch"
+    url "https://raw.githubusercontent.com/lassik/homebrew-scheme/073289b72c5b8ed1b9f12912fc2f00b2cf92ed48/patches/femtolisp-macos.patch"
     sha256 "9d4be5374b09c9abae5988632890fdb3c4193e35cc180601039c54f51e50b535"
   end
 

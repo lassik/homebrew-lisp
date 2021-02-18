@@ -8,7 +8,7 @@ class Akku < Formula
   depends_on "guile"
 
   patch do
-    url "https://raw.githubusercontent.com/lassik/homebrew-scheme/master/patches/akku-1.1.0-hide-guile-warnings.patch"
+    url "https://raw.githubusercontent.com/lassik/homebrew-scheme/84996d028e1285569f84d1d7e854ef7ef5f5f361/patches/akku-1.1.0-hide-guile-warnings.patch"
     sha256 "a9143c7252d87148ebac1f01012ddf3410c9841829604e92b6806f5b6a467cc9"
   end
 

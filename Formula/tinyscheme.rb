@@ -6,7 +6,7 @@ class Tinyscheme < Formula
   license "BSD-4-Clause"
 
   patch do
-    url "https://raw.githubusercontent.com/lassik/homebrew-scheme/master/patches/tinyscheme-1.42-macos.patch"
+    url "https://raw.githubusercontent.com/lassik/homebrew-scheme/84996d028e1285569f84d1d7e854ef7ef5f5f361/patches/tinyscheme-1.42-macos.patch"
     sha256 "5cba7b1163539007cababf3980a2ce10f8233718ed181162a56864f67257b391"
   end
 
