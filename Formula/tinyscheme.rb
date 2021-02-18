@@ -11,9 +11,8 @@ class Tinyscheme < Formula
   end
 
   def install
-    system "make", "INITFILE=#{share}/tinyscheme/init.scm"
+    system "make", "INITFILE=#{pkgshare}/init.scm"
     bin.install "scheme" => "tinyscheme"
-    mkdir "#{share}/tinyscheme"
-    share.install "init.scm" => "tinyscheme/init.scm"
+    pkgshare.install "init.scm"
   end
 end
