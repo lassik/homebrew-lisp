@@ -7,10 +7,17 @@ class Femtolisp < Formula
   head "https://github.com/JeffBezanson/femtolisp.git"
   license "BSD-3-Clause"
 
+  patch do
+    url "https://raw.githubusercontent.com/lassik/homebrew-scheme/master/patches/femtolisp-macos.patch"
+    sha256 "9d4be5374b09c9abae5988632890fdb3c4193e35cc180601039c54f51e50b535"
+  end
+
   def install
     bin.mkpath
-    system "make", "-f", "Makefile.macosx", "release", "CC=clang"
-    bin.install "flisp"
-    bin.install "flisp.boot"
+    system "make", "-f", "Makefile.macosx", "release",
+           "CC=clang", "INITFILE=#{share}/femtolisp/flisp.boot"
+    bin.install "flisp" => "femtolisp"
+    mkdir "#{share}/femtolisp"
+    share.install "flisp.boot" => "femtolisp/flisp.boot"
   end
 end
