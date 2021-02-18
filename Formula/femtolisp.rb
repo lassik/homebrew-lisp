@@ -4,8 +4,8 @@ class Femtolisp < Formula
   # url "https://github.com/ararslan/femtolisp/archive/v0.0.1.tar.gz"
   # version "0.0.1"
   # sha256 "f61f6384b13462bb3b42b60ed383763cd06b2f27c71eb082ed6cf0c9461094c7"
-  head "https://github.com/JeffBezanson/femtolisp.git"
   license "BSD-3-Clause"
+  head "https://github.com/JeffBezanson/femtolisp.git"
 
   patch do
     url "https://raw.githubusercontent.com/lassik/homebrew-scheme/073289b72c5b8ed1b9f12912fc2f00b2cf92ed48/patches/femtolisp-macos.patch"
