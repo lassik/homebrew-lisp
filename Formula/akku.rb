@@ -14,7 +14,7 @@ class Akku < Formula
 
   def install
     system "./configure", "--disable-silent-rules",
-                          "--prefix=#{prefix}"
+           "--prefix=#{prefix}"
     system "make"
     system "make", "install"
   end
