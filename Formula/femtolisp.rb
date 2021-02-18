@@ -5,6 +5,7 @@ class Femtolisp < Formula
   # version "0.0.1"
   # sha256 "f61f6384b13462bb3b42b60ed383763cd06b2f27c71eb082ed6cf0c9461094c7"
   head "https://github.com/JeffBezanson/femtolisp.git"
+  license "BSD-3-Clause"
 
   def install
     bin.mkpath
