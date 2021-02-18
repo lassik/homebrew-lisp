@@ -1,4 +1,4 @@
-class Flisp < Formula
+class Femtolisp < Formula
   desc "A lightweight, robust, Scheme-like Lisp implementation"
   homepage "https://github.com/JeffBezanson/femtolisp"
   # url "https://github.com/ararslan/femtolisp/archive/v0.0.1.tar.gz"
