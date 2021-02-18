@@ -13,11 +13,10 @@ class Femtolisp < Formula
   end
 
   def install
-    bin.mkpath
     system "make", "-f", "Makefile.macosx", "release",
-           "CC=clang", "INITFILE=#{share}/femtolisp/flisp.boot"
+           "CC=clang",
+           "INITFILE=#{pkgshare}/flisp.boot"
     bin.install "flisp" => "femtolisp"
-    mkdir "#{share}/femtolisp"
-    share.install "flisp.boot" => "femtolisp/flisp.boot"
+    pkgshare.install "flisp.boot"
   end
 end
