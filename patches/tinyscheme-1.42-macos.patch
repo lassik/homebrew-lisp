@@ -1,0 +1,45 @@
+--- tinyscheme-1.42/makefile.orig	2020-05-30 05:36:48.000000000 +0300
++++ tinyscheme-1.42/makefile	2021-02-12 20:00:21.000000000 +0200
+@@ -30,11 +30,11 @@
+ AR= ar crs
+ 
+ # Linux
+-LD = gcc
+-LDFLAGS = -shared
+-DEBUG=-g -Wno-char-subscripts -O
+-SYS_LIBS= -ldl -lm
+-PLATFORM_FEATURES= -DSUN_DL=1
++#LD = gcc
++#LDFLAGS = -shared
++#DEBUG=-g -Wno-char-subscripts -O
++#SYS_LIBS= -ldl -lm
++#PLATFORM_FEATURES= -DSUN_DL=1
+ 
+ # Cygwin
+ #PLATFORM_FEATURES = -DUSE_STRLWR=0
+@@ -44,11 +44,11 @@
+ #PLATFORM_FEATURES = -DUSE_STRLWR=0
+ 
+ # Mac OS X
+-#LD = gcc
+-#LDFLAGS = --dynamiclib
+-#DEBUG=-g -Wno-char-subscripts -O
+-#SYS_LIBS= -ldl
+-#PLATFORM_FEATURES= -DUSE_STRLWR=1 -D__APPLE__=1 -DOSX=1
++LD = gcc
++LDFLAGS = -dynamiclib
++DEBUG=-g -Wno-char-subscripts -O
++SYS_LIBS= -ldl
++PLATFORM_FEATURES= -DUSE_STRLWR=1 -D__APPLE__=1 -DOSX=1
+ 
+ 
+ # Solaris
+@@ -71,7 +71,7 @@
+ all: $(LIBTARGET) $(STATICLIBTARGET) scheme$(EXE_EXT)
+ 
+ %.$(Osuf): %.c
+-	$(CC) -I. -c $(DEBUG) $(FEATURES) $(DL_FLAGS) $<
++	$(CC) -I. -c $(DEBUG) $(FEATURES) $(DL_FLAGS) -D 'InitFile="$(INITFILE)"' $<
+ 
+ $(LIBTARGET): $(OBJS)
+ 	$(LD) $(LDFLAGS) $(OUT) $(OBJS) $(SYS_LIBS)
