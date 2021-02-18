@@ -13,8 +13,8 @@ class S7 < Formula
            "-D", "S7_LOAD_PATH=\"#{pkgshare}\""
     system "./s7", "libc.scm"
     bin.install "s7"
-    lib.install "libc_s7.so" => "libc_s7.dylib"
+    lib.install "libc_s7.so"
     pkgshare.install Dir["*.scm"]
-    symlink "#{lib}/libc_s7.dylib", "#{pkgshare}/libc_s7.so"
+    symlink "#{lib}/libc_s7.so", "#{pkgshare}/libc_s7.so"
   end
 end
