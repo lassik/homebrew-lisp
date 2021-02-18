@@ -1,0 +1,11 @@
+--- Makefile.macosx.orig	2021-02-18 10:31:52.000000000 +0200
++++ Makefile.macosx	2021-02-18 10:32:36.000000000 +0200
+@@ -10,7 +10,7 @@
+ LLTDIR = llt
+ LLT = $(LLTDIR)/libllt.a
+ 
+-CONFIG = -DBITS64 -D__CPU__=686 -I$(CARBON_HEADERS)
++CONFIG = -DBITS64 -D__CPU__=686 -I$(CARBON_HEADERS) -D "INITFILE=\"$(INITFILE)\""
+ FLAGS = -falign-functions -Wall -Wno-strict-aliasing -I$(LLTDIR) $(CFLAGS) -DUSE_COMPUTED_GOTO $(CONFIG)
+ LIBFILES = $(LLT)
+ LIBS = $(LIBFILES) -lm -framework ApplicationServices
