@@ -6,6 +6,7 @@ class MoshScheme < Formula
   homepage "http://mosh.monaos.org/"
   url "https://files.scheme.org/mosh-0.2.7.tar.gz"
   sha256 "3bafe0e3412d78041433540b59a84523f5c36c5d6c7f94a661e43d74ae7ca74e"
+  license "MIT"
   head "https://github.com/okuoku/mosh.git" # higepon/mosh
 
   depends_on "gmp"

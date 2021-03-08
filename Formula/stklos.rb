@@ -3,6 +3,7 @@ class Stklos < Formula
   homepage "https://stklos.net/"
   url "http://www.stklos.net/download/stklos-1.50.tar.gz"
   sha256 "991775d7b46b356a1ff595f6d9ce5e0cdc1db0a41f99809e2e4c97e850981ad2"
+  license "GPL-2.0-or-later"
   head "https://github.com/egallesio/STklos.git"
 
   depends_on "gmp"
