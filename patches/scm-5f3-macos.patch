@@ -11,3 +11,16 @@ index 64f8439..65dcff6 100755
  	  (include-spec "-I" parms)
  	  (c-includes parms)
  	  (c-flags parms)
+diff --git a/scmfig.h b/scmfig.h
+index f7bc664..5555951 100755
+--- a/scmfig.h
++++ b/scmfig.h
+@@ -109,7 +109,7 @@ rgx.c	init_rgx();	regcomp and regexec. */
+ 
+ #ifdef FLOATS
+ # ifndef _MSC_VER
+-#  define SINGLES
++/* #  define SINGLES */
+ # endif
+ #endif
+ 
