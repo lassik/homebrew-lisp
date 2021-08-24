@@ -1,10 +1,10 @@
-# Homebrew Scheme
+# Homebrew Lisp
 
 ## How do I install these formulae?
 
-`brew install lassik/scheme/<formula>`
+`brew install lassik/lisp/<formula>`
 
-Or `brew tap lassik/scheme` and then `brew install <formula>`.
+Or `brew tap lassik/lisp` and then `brew install <formula>`.
 
 ## Documentation
 
