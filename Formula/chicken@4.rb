@@ -12,7 +12,7 @@ class ChickenAT4 < Formula
   end
 
   patch do
-    url "https://raw.githubusercontent.com/lassik/homebrew-scheme/bc4ccba2cdf5ddd31c08d50f53fbeb6f8dcff247/patches/chicken-4.13.0-manpage-names.patch"
+    url "https://raw.githubusercontent.com/lassik/homebrew-lisp/bc4ccba2cdf5ddd31c08d50f53fbeb6f8dcff247/patches/chicken-4.13.0-manpage-names.patch"
     sha256 "72f914875ba5bda49ae6801a1be7dbca5b6c056340156d9fdac59aa4e26f5992"
   end
 
