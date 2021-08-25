@@ -1,8 +1,6 @@
 class S7 < Formula
   desc "Scheme interpreter for music applications [R7RS]"
   homepage "https://s7.scheme.org/"
-  url "https://ccrma.stanford.edu/software/s7/s7-04Feb21.tar.gz"
-  sha256 "6ce1e552f5a6251f034996a579126bcdc231ece30520d004d374fe1b59587194"
   license "0BSD"
   head "https://cm-gitlab.stanford.edu/bil/s7.git"
 
