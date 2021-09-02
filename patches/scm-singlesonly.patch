@@ -1,13 +1,13 @@
 diff --git a/scmfig.h b/scmfig.h
-index f7bc664..15ddee7 100755
+index f7bc664..f87c21e 100755
 --- a/scmfig.h
 +++ b/scmfig.h
-@@ -113,6 +113,8 @@ rgx.c	init_rgx();	regcomp and regexec. */
+@@ -113,7 +113,7 @@ rgx.c	init_rgx();	regcomp and regexec. */
  # endif
  #endif
  
+-/* #define SINGLESONLY */
 +#define SINGLESONLY
-+
- /* #define SINGLESONLY */
  
  /* Define CDR_DOUBLES if (sizeof(double)==sizeof(long)), i.e.
+    a `single' is really a double. */
