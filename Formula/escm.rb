@@ -8,7 +8,8 @@ class Escm < Formula
   def install
     system "./configure", "--prefix=#{prefix}"
     system "make"
-    bin.install "escm"  # There's a bug in the `make install` target.
+    bin.mkdir
+    system "make", "install"
   end
 
   test do
