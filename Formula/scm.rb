@@ -24,7 +24,13 @@ class Scm < Formula
 
   depends_on "slib"
 
+  patch do
+    url "https://raw.githubusercontent.com/lassik/homebrew-lisp/lassik-scm/patches/scm-singlesonly.patch"
+    sha256 "1d4c97bd8ba4e133934c95f3713f1d85488cd26ac08ccf13dda6ddc686069125"
+  end
+
   def install
+    ENV.deparallelize
     ENV["SCHEME_LIBRARY_PATH"] = "#{HOMEBREW_PREFIX}/lib/slib/"
     system "./configure", "--prefix=#{prefix}"
     system "make", "scmlit"
