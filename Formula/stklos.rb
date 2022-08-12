@@ -19,4 +19,11 @@ class Stklos < Formula
     system "make check"
     system "make install"
   end
+
+  test do
+    output = shell_output("#{bin}/stklos -V")
+    assert_match "(stklos.threads pthread)", output
+    assert_match "(stklos.system-libs libffi libpcre libgmp libgc)", output
+    assert_match "(stklos.compiled-libs)", output
+  end
 end
