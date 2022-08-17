@@ -13,7 +13,9 @@ class MoshScheme < Formula
   depends_on "oniguruma"
 
   def install
-    system "sh ./gen-git-build.sh"
+    if build.head?
+      system "sh ./gen-git-build.sh"
+    end
     system "./configure",
            "--disable-dependency-tracking",
            "--prefix=#{prefix}",
