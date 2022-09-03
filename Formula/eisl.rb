@@ -1,14 +1,13 @@
 class Eisl < Formula
   desc "ISLisp interpreter/compiler"
   homepage "https://github.com/sasagawa888/eisl"
-  version "2.60"
+  version "2.62"
   url "https://github.com/sasagawa888/eisl.git",
       tag: "v#{version}",
-      revision: "88e7dfa07edc86dbe87460a613b6d8d69f1c722a"
+      revision: "a23b51451b0cdcc444f432b9c0efc992b3473828"
   head "https://github.com/sasagawa888/eisl.git"
 
   def install
-    bin.mkpath
-    system "make", "install", "PREFIX=#{prefix}", "OPSYS=macos"
+    system "make", "install", "PREFIX=#{prefix}"
   end
 end
