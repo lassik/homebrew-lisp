@@ -1,6 +1,6 @@
 cask "wraith-scheme" do
-  version "2.26"
-  sha256 "cfd61006ba14e3b0db0c2e254b4c396cb4bd17d896871d280b99d762452cf82e"
+  version "2.27"
+  sha256 "6bf97c3d2932bcea6bb451cf7e0d218fb00042a6668eb3830e27edcb6b0ece47"
   url "http://jayreynoldsfreeman.com/Public/Wraith%20Scheme%20#{version}.dmg"
   name "Wraith Scheme"
   desc "R5RS Scheme implementation"
