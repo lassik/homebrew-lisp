@@ -4,8 +4,8 @@
 class MoshScheme < Formula
   desc "Fast Scheme interpreter [R6RS]"
   homepage "http://mosh.monaos.org/"
-  url "https://github.com/higepon/mosh/releases/download/mosh-0.2.8-rc6/mosh-0.2.8-rc6.tar.gz"
-  sha256 "7b0d28ccc07ae398565a59b63a3a4b06f78e53f727eb11b151891a24a3af443f"
+  url "https://github.com/higepon/mosh/releases/download/mosh-0.2.8-rc7/mosh-0.2.8-rc7.tar.gz"
+  sha256 "b74f9325e1d0e744c0332cd9728f1b913716c80d2332701a6cb1f98ca7459f9f"
   license "MIT"
   head "https://github.com/higepon/mosh.git"
 
