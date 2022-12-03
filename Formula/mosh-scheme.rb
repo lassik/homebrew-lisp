@@ -10,8 +10,8 @@ class MoshScheme < Formula
   head "https://github.com/higepon/mosh.git"
 
   if build.head?
-    depends_on "autoconf" => :build # Only head needs this.
-    depends_on "automake" => :build # Only head needs this.
+    depends_on "autoconf" => :build
+    depends_on "automake" => :build
   end
   depends_on "gmp"
   depends_on "oniguruma"
