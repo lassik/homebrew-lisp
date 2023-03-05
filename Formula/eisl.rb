@@ -1,10 +1,10 @@
 class Eisl < Formula
   desc "ISLisp interpreter/compiler"
   homepage "https://github.com/sasagawa888/eisl"
-  version "2.70"
+  version "2.85"
   url "https://github.com/sasagawa888/eisl.git",
       tag: "v#{version}",
-      revision: "52b59efd95b11787e3d4ae3c2bb5dccbd9f4ebf5"
+      revision: "34509bdefa88a14af142d28b864bd2deac5ffec0"
   head "https://github.com/sasagawa888/eisl.git"
 
   def install
