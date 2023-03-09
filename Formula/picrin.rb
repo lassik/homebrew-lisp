@@ -1,11 +1,10 @@
 class Picrin < Formula
-  desc "Picrin Scheme interpreter (R7RS)"
+  desc "Interpreter Picrin Scheme (R7RS)"
   homepage "https://github.com/picrin-scheme/picrin"
-  license "MIT"
-  version "0.1"
   url "https://github.com/picrin-scheme/picrin.git",
-      tag: "v#{version}",
+      tag:      "v0.1",
       revision: "2af9020b73ef9b6f89246ec35bed32bbe83986e3"
+  license "MIT"
   head "https://github.com/picrin-scheme/picrin.git"
 
   def install
