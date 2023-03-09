@@ -16,8 +16,8 @@ class Stklos < Formula
            "--disable-dependency-tracking",
            "--prefix=#{prefix}"
     system "make"
-    system "make check"
-    system "make install"
+    system "make", "check"
+    system "make", "install"
   end
 
   test do
