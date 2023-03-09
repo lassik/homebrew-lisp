@@ -15,10 +15,10 @@
 # make: ginstall-info: No such file or directory
 
 class Scm < Formula
-  desc "The SCM Implementation of Scheme"
+  desc "Scheme implementation SCM"
   homepage "https://people.csail.mit.edu/jaffer/SCM.html"
-  version "5f3"
   url "https://files.scheme.org/scm-#{version}.zip"
+  version "5f3"
   sha256 "27c944b871c319a820e0fb1698bccb27d929db197f9e44d9ad4650f52aa4bdcb"
   license "GPL-3.0-or-later"  # TODO: Verify this.
 
