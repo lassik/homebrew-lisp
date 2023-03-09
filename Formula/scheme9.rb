@@ -6,7 +6,7 @@ class Scheme9 < Formula
   #license ""  # Public domain
 
   patch do
-    url "https://raw.githubusercontent.com/lassik/homebrew-lisp/lassik-scheme9/patches/s9fes-20181205-make-installdirs.patch"
+    url "https://raw.githubusercontent.com/lassik/homebrew-lisp/master/patches/s9fes-20181205-make-installdirs.patch"
     sha256 "c4c8d04804764ff9c454282e785d6025ca980aeb83527da11afd996a98e9d723"
   end
 
