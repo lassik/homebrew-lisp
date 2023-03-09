@@ -17,15 +17,13 @@ class MoshScheme < Formula
   depends_on "oniguruma"
 
   def install
-    if build.head?
-      system "sh ./gen-git-build.sh"
-    end
+    system "sh", "./gen-git-build.sh" if build.head?
     system "./configure",
            "--disable-dependency-tracking",
            "--prefix=#{prefix}",
            "--program-transform-name=s@mosh@mosh-scheme@; s@_@-@"
     system "make"
-    system "make check"
-    system "make install"
+    system "make", "check"
+    system "make", "install"
   end
 end
