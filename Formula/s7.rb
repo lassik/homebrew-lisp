@@ -6,7 +6,7 @@ class S7 < Formula
 
   def install
     touch "mus-config.h"
-    system "cc", "-o", "s7", "s7.c", "-ldl", "-lm", "-rdynamic",
+    system ENV.cc, "-o", "s7", "s7.c", "-ldl", "-lm", "-rdynamic",
            "-O2", "-g", "-I", ".", "-D", "WITH_MAIN",
            "-D", "S7_LOAD_PATH=\"#{pkgshare}\""
     system "./s7", "libc.scm"
