@@ -1,8 +1,8 @@
 class Stklos < Formula
   desc "Scheme interpreter with object-oriented GUI [R7RS]"
   homepage "https://stklos.net/"
-  url "http://www.stklos.net/download/stklos-1.50.tar.gz"
-  sha256 "991775d7b46b356a1ff595f6d9ce5e0cdc1db0a41f99809e2e4c97e850981ad2"
+  url "http://www.stklos.net/download/stklos-1.70.tar.gz"
+  sha256 "15a1251a0e72d66051011bb95ba9122b22f7acd8a5a0d0e4f8737cc9fcbb83c7"
   license "GPL-2.0-or-later"
   head "https://github.com/egallesio/STklos.git"
 
@@ -22,6 +22,7 @@ class Stklos < Formula
 
   test do
     output = shell_output("#{bin}/stklos -V")
+    assert_match "(version \"#{version}\")", output
     assert_match "(stklos.threads pthread)", output
     assert_match "(stklos.system-libs libffi libpcre libgmp libgc)", output
     assert_match "(stklos.compiled-libs)", output
