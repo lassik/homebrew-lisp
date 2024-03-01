@@ -8,8 +8,10 @@ class Picrin < Formula
   head "https://github.com/picrin-scheme/picrin.git"
 
   def install
-    system "make", "prefix=#{prefix}"
+    args = ["prefix=#{prefix}"]
+    system "make", *args
     bin.mkdir
-    system "make", "prefix=#{prefix}", "install"
+    #system "make", *args, "test"
+    system "make", *args, "install"
   end
 end
