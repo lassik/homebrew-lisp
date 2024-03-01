@@ -1,9 +1,8 @@
 class Picrin < Formula
   desc "Interpreter Picrin Scheme (R7RS)"
   homepage "https://github.com/picrin-scheme/picrin"
-  url "https://github.com/picrin-scheme/picrin.git",
-      tag:      "v0.1",
-      revision: "2af9020b73ef9b6f89246ec35bed32bbe83986e3"
+  url "https://files.scheme.org/picrin-0.2.tar.gz"
+  sha256 "8dce5deeec5fe2c24d9b663416479669096522335681f64237f319e685020167"
   license "MIT"
   head "https://github.com/picrin-scheme/picrin.git"
 
